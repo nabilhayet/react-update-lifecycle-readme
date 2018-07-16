@@ -138,6 +138,7 @@ have as little of these methods as possible.
 ### Updating lifecycle methods
 
 Not called on initial render, but always called whenever a subsequent re-render is triggered:
+
 | Method            | current props and state | prevProps | prevState | nextProps |  nextState | Can call `this.setState` | Called when?               | Used for                                                                                    |
 |:-------------------------:|:---------:|:---------:|:----------------------:|:-------------------------------------------------------:|:--------------------------------------------------------------------------------:|:---------:|:---------:|:----------------------:|
 | `static getDerivedStateFromProps()` |    yes    |     no    |     no    |     no    |     no    |     yes     |     before every render  |   Not used often |
