@@ -138,9 +138,8 @@ have as little of these methods as possible.
 ### Updating lifecycle methods
 
 Not called on initial render, but always called whenever a subsequent re-render is triggered:
-
 | Method            | current props and state | prevProps | prevState | nextProps |  nextState | Can call `this.setState` | Called when?               | Used for                                                                                    |
-|:-------------------------:|:---------:|:---------:|:----------------------:|:-------------------------------------------------------:|:--------------------------------------------------------------------------------:|
+|:-------------------------:|:---------:|:---------:|:----------------------:|:-------------------------------------------------------:|:--------------------------------------------------------------------------------:|:---------:|:---------:|:----------------------:|
 | `static getDerivedStateFromProps()` |    yes    |     no    |     no    |     no    |     no    |     yes     |     before every render  |   Not used often |
 |   `shouldComponentUpdate`   |    yes    |    no    |    no    |    yes    |    yes   |    yes    | before every re-render (not initially) | can be used to stop unnecessary re-renders for performance optimization |
 |     `getSnapshotBeforeUpdate`    |    yes   |    yes   |    yes   |    no   |    no   |    yes   | just before React updates and commits new content to the DOM | used rarely; can capture data that may be changing rapidly |
