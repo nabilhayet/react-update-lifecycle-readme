@@ -135,7 +135,7 @@ component. The `render()` method is the only one we *must* have - everything
 else is optional. Use these methods sparingly. In the ideal world, we want to
 have as little of these methods as possible.
 
-### Updating lifecycle methods
+#### Updating lifecycle methods
 
 Not called on initial render, but always called whenever a subsequent re-render is triggered:
 
@@ -146,8 +146,7 @@ Not called on initial render, but always called whenever a subsequent re-render 
 |     `getSnapshotBeforeUpdate`    |    yes   |    yes   |    yes   |    no   |    no   |    yes   | just before React updates and commits new content to the DOM | used rarely; can capture data that may be changing rapidly |
 |     `componentDidUpdate`    |    yes   |    yes    |    yes    |    no   |    no    |    yes    | just after a re-render has finished | any DOM updates following a render (mostly interacting with 3rd party libraries) |
 
-Current props and state are always
-\* `componentDidUpdate` will actually receive `prevProps` and `prevState` as arguments, as the newly applied state and props can be accessed through `this.props` and `this.state`.
+`componentDidUpdate` will actually receive `prevProps` and `prevState` as arguments, as the newly applied state and props can be accessed through `this.props` and `this.state`.
 
 <p align="center">
   <img src="https://media.giphy.com/media/wDOFUCaxyv2XC/giphy.gif" />
@@ -157,8 +156,6 @@ Current props and state are always
 
 - [React: Component Specs and Lifecycle](https://github.com/learn-co-curriculum/react-rendering)
 - [Idempotent Operations](https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation)
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/react-rendering'>Rendering</a> on Learn.co and start learning to code for free.</p>
 
 [derived]: https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
 [pure]: https://reactjs.org/docs/react-api.html#reactpurecomponent
