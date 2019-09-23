@@ -41,8 +41,8 @@ time previous props and state will be available).
 
 #### `static getDerivedStateFromProps(props, state)`
 
-This method is called on _every_ update. That means whenever the component is
-receiving new props from its parent or the component state has changed. A
+This method is called on _every_ update, meaning whenever the component is
+receiving new props from its parent or the component's state has changed. A
 word of caution: a common mistake here is to assume that the props have changed.
 Just because the method is called doesn't necessarily mean that the props have
 changed. It is entirely possible that a parent component has updated and in
