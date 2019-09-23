@@ -49,7 +49,7 @@ changed. It is entirely possible that a parent component has updated and in
 re-rendering has passed the _same_ props down to its children. In this case,
 regular components will still be triggered to update.
 
-This method is for deriving state, meaning you want to modify a components state
+This method is for deriving state, meaning you want to modify a component's state
 based on something in the new props. React's [official advice][derived] is that
 you probably don't need this, and in many cases where it seems necessary, there
 is often a better solution.
