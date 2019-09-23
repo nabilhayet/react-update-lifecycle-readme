@@ -128,8 +128,7 @@ case for this would be to update a 3rd party library.
   }
 ```
 
-This method can also be used to interact with the DOM, say be adjusting scroll
-position.
+This method can also be used to interact with the DOM, say by adjusting scroll position.
 
 ## Summary
 
