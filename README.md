@@ -58,7 +58,7 @@ is often a better solution.
 
 The `shouldComponentUpdate` method is the odd one out in the lifecycle methods
 as it doesn't operate on the state, but has a `Boolean` return value determining
-whether the component should update or not. It's sole use is for custom
+whether the component should update or not. Its sole use is for custom
 performance optimization.
 
 Say, for instance, you only want a component to update when a value changes
